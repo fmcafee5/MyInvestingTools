@@ -16,13 +16,33 @@ header {
 }
 
 .header-content {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .header-content h1 {
     margin: 0;
     font-size: 2.5em;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .container {
@@ -80,4 +100,19 @@ header {
 
 .resource a:hover {
     text-decoration: underline;
+}
+
+#about-me {
+    margin-top: 40px;
+}
+
+#about-me h2 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+#about-me p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: center;
 }
