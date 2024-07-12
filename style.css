@@ -17,11 +17,9 @@ header {
 
 .header-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    flex-direction: column;
 }
 
 .header-content h1 {
@@ -32,6 +30,7 @@ header {
 nav {
     display: flex;
     gap: 20px;
+    margin-top: 10px;
 }
 
 nav a {
@@ -100,6 +99,10 @@ nav a:hover {
 
 .resource a:hover {
     text-decoration: underline;
+}
+
+#books .resource {
+    text-align: left;
 }
 
 #about-me {
