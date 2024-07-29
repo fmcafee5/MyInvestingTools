@@ -25,6 +25,17 @@ header {
     font-size: 2.5em;
 }
 
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
     width: 90%;
     max-width: 1200px;
