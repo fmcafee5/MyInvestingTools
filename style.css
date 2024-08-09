@@ -1,3 +1,4 @@
+/* Base Styles */
 body {
     font-family: 'Roboto', sans-serif;
     background: url('images/Website background.jpeg') no-repeat center center fixed;
@@ -7,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Header Styles */
 header {
     background-color: rgba(76, 175, 80, 0.85);
     color: white;
@@ -36,20 +38,55 @@ header nav a:hover {
     text-decoration: underline;
 }
 
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+/* Content Container Styles */
+.content-container {
+    flex: 1;
+    max-width: 70%; /* Adjust based on your preference */
+    padding-right: 20px;
+}
+
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+    width: 100%;
+    margin-bottom: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Grid container for resources */
+/* Sidebar Styles */
+.sidebar {
+    flex: 0 0 300px; /* Fixed width for the sidebar */
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.9); /* Match the resource background */
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.adsbygoogle {
+    width: 100%; /* Make sure the ad fits within the sidebar */
+    margin-bottom: 20px;
+}
+
+/* Grid Container for Resources */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr); /* Set to 2 columns */
     gap: 20px;
 }
 
@@ -94,40 +131,7 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-/* Styles for the sidebar and ad block */
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px;
-}
-
-.content-container {
-    flex: 1;
-    max-width: 70%; /* Adjust based on your preference */
-    padding-right: 20px;
-}
-
-.sidebar {
-    flex: 0 0 300px; /* Fixed width for the sidebar */
-    max-width: 300px;
-    padding: 20px;
-    background-color: rgba(245, 245, 245, 0.9); /* Match the resource background */
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
-
-.sidebar h2 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    color: #4CAF50;
-}
-
-.adsbygoogle {
-    width: 100%; /* Make sure the ad fits within the sidebar */
-    margin-bottom: 20px;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
@@ -138,5 +142,10 @@ header nav a:hover {
         flex: 1;
         padding: 10px;
     }
+
+    .grid-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }
+
 
