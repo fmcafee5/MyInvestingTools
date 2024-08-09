@@ -86,7 +86,7 @@ header nav a:hover {
 /* Grid Container for Resources */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Set to 2 columns */
+    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns */
     gap: 20px;
 }
 
@@ -132,6 +132,12 @@ header nav a:hover {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+    }
+}
+
 @media (max-width: 768px) {
     .main-content {
         flex-direction: column;
@@ -147,5 +153,6 @@ header nav a:hover {
         grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
+
 
 
