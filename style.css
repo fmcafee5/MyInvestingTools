@@ -46,6 +46,7 @@ header nav a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Grid container for resources */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -92,3 +93,50 @@ header nav a:hover {
 .resource a:hover {
     text-decoration: underline;
 }
+
+/* Styles for the sidebar and ad block */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.content-container {
+    flex: 1;
+    max-width: 70%; /* Adjust based on your preference */
+    padding-right: 20px;
+}
+
+.sidebar {
+    flex: 0 0 300px; /* Fixed width for the sidebar */
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(245, 245, 245, 0.9); /* Match the resource background */
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4CAF50;
+}
+
+.adsbygoogle {
+    width: 100%; /* Make sure the ad fits within the sidebar */
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .content-container, .sidebar {
+        max-width: 100%;
+        flex: 1;
+        padding: 10px;
+    }
+}
+
