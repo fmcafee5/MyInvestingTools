@@ -8,6 +8,7 @@ body {
     color: #333;
 }
 
+/* Sidebar Ad Styles */
 .sidebar {
     padding: 20px;
     background-color: rgba(245, 245, 245, 0.9);
@@ -15,8 +16,9 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    width: 100%; /* Ensure the ad takes up the full width of the sidebar */
-    margin-bottom: 40px; /* Add margin at the bottom to create space between ads and next section */
+    width: auto; /* Allow the width to be determined by the content */
+    max-width: 300px; /* Set a maximum width for sidebar ads */
+    margin: 0 auto 40px auto; /* Center the sidebar ad box and add bottom margin */
 }
 
 .sidebar h2 {
@@ -31,14 +33,16 @@ body {
 
 /* Full-Width Ad Styles */
 .full-width-ad {
-    width: 100%;
-    margin: 0 0 40px 0; /* Added bottom margin to space out from the next section */
-    padding: 10px 0;
+    width: auto;
+    max-width: 800px; /* Limit the width to a reasonable maximum */
+    margin: 0 auto 40px auto; /* Center the ad box and add bottom margin */
+    padding: 10px 20px; /* Add padding for some space inside the box */
     background-color: #f8f8f8;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
+    border-radius: 8px; /* Add border-radius for a softer look */
 }
 
 .full-width-ad h2 {
@@ -46,7 +50,6 @@ body {
     font-weight: 400;
     color: #333;
     margin-bottom: 8px;
-    letter-spacing: normal;
 }
 
 .full-width-ad p {
@@ -179,5 +182,4 @@ header nav a:hover {
         grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
-
 
