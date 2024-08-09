@@ -28,12 +28,9 @@ body {
     margin-bottom: 20px;
 }
 
-
-}
-
 /* Header Styles */
 header {
-    background-color: rgba(76, 175, 80, 0.85);
+    background-color: rgba(76, 175, 80, 0.85); /* Ensure this color is applied correctly */
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -154,5 +151,6 @@ header nav a:hover {
         grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
+
 
 
