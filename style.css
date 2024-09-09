@@ -16,9 +16,8 @@ body {
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    width: auto; /* Allow the width to be determined by the content */
-    max-width: 300px; /* Set a maximum width for sidebar ads */
-    margin: 0 auto 40px auto; /* Center the sidebar ad box and add bottom margin */
+    max-width: 300px;
+    margin: 0 auto 40px auto; /* Center the sidebar */
 }
 
 .sidebar h2 {
@@ -34,15 +33,15 @@ body {
 /* Full-Width Ad Styles */
 .full-width-ad {
     width: auto;
-    max-width: 800px; /* Limit the width to a reasonable maximum */
-    margin: 0 auto 40px auto; /* Center the ad box and add bottom margin */
-    padding: 10px 20px; /* Add padding for some space inside the box */
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    padding: 10px 20px;
     background-color: #f8f8f8;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
-    border-radius: 8px; /* Add border-radius for a softer look */
+    border-radius: 8px;
 }
 
 .full-width-ad h2 {
@@ -65,12 +64,6 @@ header {
     color: white;
     padding: 20px 0;
     text-align: center;
-    position: relative;
-}
-
-.header-content {
-    position: relative;
-    z-index: 2;
 }
 
 .header-content h1 {
@@ -99,13 +92,13 @@ header nav a:hover {
 /* Content Container Styles */
 .content-container {
     flex: 1;
-    max-width: 70%; /* Adjust based on your preference */
+    max-width: 70%;
     padding-right: 20px;
 }
 
 .container {
     width: 100%;
-    margin-bottom: 40px; /* Increased bottom margin to create more space between sections */
+    margin-bottom: 40px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
@@ -115,18 +108,18 @@ header nav a:hover {
 /* Grid Container for Resources */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
 .resource {
-    background-color: rgba(245, 245, 245, 0.9); /* Light grey background for differentiation */
+    background-color: rgba(245, 245, 245, 0.9);
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Adding a border for better separation */
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .resource img {
@@ -163,7 +156,7 @@ header nav a:hover {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -174,12 +167,11 @@ header nav a:hover {
 
     .content-container {
         max-width: 100%;
-        flex: 1;
         padding: 10px;
     }
 
     .grid-container {
-        grid-template-columns: 1fr; /* Single column on smaller screens */
+        grid-template-columns: 1fr;
     }
 }
 
