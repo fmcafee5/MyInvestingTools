@@ -8,56 +8,6 @@ body {
     color: #333;
 }
 
-/* Sidebar Ad Styles */
-.sidebar {
-    padding: 20px;
-    background-color: rgba(245, 245, 245, 0.9);
-    border-left: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-    max-width: 300px;
-    margin: 0 auto 40px auto; /* Center the sidebar */
-}
-
-.sidebar h2 {
-    margin-bottom: 15px;
-    font-size: 1.5em;
-    color: #4CAF50;
-}
-
-.adsbygoogle {
-    margin-bottom: 20px;
-}
-
-/* Full-Width Ad Styles */
-.full-width-ad {
-    width: auto;
-    max-width: 800px;
-    margin: 0 auto 40px auto;
-    padding: 10px 20px;
-    background-color: #f8f8f8;
-    text-align: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    border-radius: 8px;
-}
-
-.full-width-ad h2 {
-    font-size: 1.5em;
-    font-weight: 400;
-    color: #333;
-    margin-bottom: 8px;
-}
-
-.full-width-ad p {
-    font-size: 1em;
-    color: #666;
-    margin: 8px 0;
-    line-height: 1.4;
-}
-
 /* Header Styles */
 header {
     background-color: rgba(76, 175, 80, 0.85);
@@ -92,13 +42,13 @@ header nav a:hover {
 /* Content Container Styles */
 .content-container {
     flex: 1;
-    max-width: 70%;
+    max-width: 70%; /* Adjust based on your preference */
     padding-right: 20px;
 }
 
 .container {
     width: 100%;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Increased bottom margin to create more space between sections */
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 8px;
@@ -108,18 +58,18 @@ header nav a:hover {
 /* Grid Container for Resources */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns */
     gap: 20px;
 }
 
 .resource {
-    background-color: rgba(245, 245, 245, 0.9);
+    background-color: rgba(245, 245, 245, 0.9); /* Light grey background for differentiation */
     padding: 20px;
     margin: 10px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Adding a border for better separation */
 }
 
 .resource img {
@@ -156,7 +106,7 @@ header nav a:hover {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
 }
 
@@ -167,11 +117,13 @@ header nav a:hover {
 
     .content-container {
         max-width: 100%;
+        flex: 1;
         padding: 10px;
     }
 
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
+
 
